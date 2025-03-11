@@ -55,7 +55,7 @@ export default function GifShowcase() {
     <div className="flex flex-col items-center p-6 space-y-6">
       {/* Header */}
       <header className="w-full flex flex-col items-center p-4 text-white">
-        <img src="/logo.png" alt="Pocket Space Logo" className="w-32 h-32" />
+        <img src="logo.png" alt="Pocket Space Logo" className="w-32 h-32" />
       </header>
 
       <h1 className="text-3xl font-bold">POCKET SPACE: IDLE</h1>
