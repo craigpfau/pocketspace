@@ -44,6 +44,12 @@ const gifCategories = [
       { src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" },
     ],
   },
+  {
+    category: "Robots",
+    gifs: [
+      { src: "gifs/robot_idle_walk.gif", title: "Robots 1" },
+    ],
+  },
 ];
 
 export default function GifShowcase() {
