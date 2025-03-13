@@ -36,6 +36,8 @@ const gifCategories = [
       { src: "gifs/mechanic_idle_walk_medium.gif", title: "Mechanic" },
       { src: "gifs/security_idle_walk_medium.gif", title: "Security" },
       { src: "gifs/nurse_idle_walk_medium.gif", title: "Nurse" },
+      { src: "gifs/admiral_idle_walk_medium.gif", title: "Admiral" },
+      { src: "gifs/hazmat_idle_walk_medium.gif", title: "Hazmat" },
     ],
   },
   {
