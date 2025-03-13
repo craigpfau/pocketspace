@@ -39,16 +39,20 @@ const gifCategories = [
     ],
   },
   {
+    category: "Greys",
+    gifs: [{ src: "gifs/greys_idle_walk.gif", title: "Greys 1" }],
+  },
+  {
     category: "Slimes",
-    gifs: [
-      { src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" },
-    ],
+    gifs: [{ src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" }],
   },
   {
     category: "Robots",
-    gifs: [
-      { src: "gifs/robot_idle_walk.gif", title: "Robots 1" },
-    ],
+    gifs: [{ src: "gifs/robot_idle_walk.gif", title: "Robots 1" }],
+  },
+  {
+    category: "Furries",
+    gifs: [{ src: "gifs/furries_idle_walk.gif", title: "Furries 1" }],
   },
 ];
 
