@@ -21,40 +21,37 @@ const gifCategories = [
     gifs: [
       { src: "gifs/base_idle_walk_handgun_medium.gif", title: "Handgun" },
       { src: "gifs/base_idle_walk_rifle_medium.gif", title: "Rifle" },
-      { src: "gifs/base_idle_walk_shotgun_medium.gif", title: "Shotgun" },
+      { src: "gifs/base_idle_walk_rocketlauncher_medium.gif", title: "Rocket", },
       { src: "gifs/base_idle_walk_semiauto_medium.gif", title: "Semi Auto" },
-      {
-        src: "gifs/base_idle_walk_rocketlauncher_medium.gif",
-        title: "Rocket",
-      },
+      { src: "gifs/base_idle_walk_shotgun_medium.gif", title: "Shotgun" },
     ],
   },
   {
     category: "Clothing Options Humans",
     gifs: [
-      { src: "gifs/flight_suit_idle_walk_medium.gif", title: "Wet Suit" },
-      { src: "gifs/mechanic_idle_walk_medium.gif", title: "Mechanic" },
-      { src: "gifs/security_idle_walk_medium.gif", title: "Security" },
-      { src: "gifs/nurse_idle_walk_medium.gif", title: "Nurse" },
       { src: "gifs/admiral_idle_walk_medium.gif", title: "Admiral" },
       { src: "gifs/hazmat_idle_walk_medium.gif", title: "Hazmat" },
+      { src: "gifs/mechanic_idle_walk_medium.gif", title: "Mechanic" },
+      { src: "gifs/nurse_idle_walk_medium.gif", title: "Nurse" },
+      { src: "gifs/security_idle_walk_medium.gif", title: "Security" },
+      { src: "gifs/flight_suit_idle_walk_medium.gif", title: "Wet Suit" },
     ],
+  },
+  {
+    category: "Furries",
+    gifs: [{ src: "gifs/furries_idle_walk.gif", title: "Furries 1" }],
   },
   {
     category: "Greys",
     gifs: [{ src: "gifs/greys_idle_walk.gif", title: "Greys 1" }],
   },
   {
-    category: "Slimes",
-    gifs: [{ src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" }],
-  },
-  {
     category: "Robots",
     gifs: [{ src: "gifs/robot_idle_walk.gif", title: "Robots 1" }],
   },
   {
-    category: "Furries",
-    gifs: [{ src: "gifs/furries_idle_walk.gif", title: "Furries 1" }],
+    category: "Slimes",
+    gifs: [{ src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" }],
   },
 ];
 
