@@ -21,7 +21,7 @@ const gifCategories = [
     gifs: [
       { src: "gifs/base_idle_walk_handgun_medium.gif", title: "Handgun" },
       { src: "gifs/base_idle_walk_rifle_medium.gif", title: "Rifle" },
-      { src: "gifs/base_idle_walk_rocketlauncher_medium.gif", title: "Rocket", },
+      { src: "gifs/base_idle_walk_rocketlauncher_medium.gif", title: "Rocket" },
       { src: "gifs/base_idle_walk_semiauto_medium.gif", title: "Semi Auto" },
       { src: "gifs/base_idle_walk_shotgun_medium.gif", title: "Shotgun" },
     ],
@@ -31,6 +31,7 @@ const gifCategories = [
     gifs: [
       { src: "gifs/admiral_idle_walk_medium.gif", title: "Admiral" },
       { src: "gifs/hazmat_idle_walk_medium.gif", title: "Hazmat" },
+      { src: "gifs/fitness_idle_walk_medium.gif", title: "Hoodie" },
       { src: "gifs/mechanic_idle_walk_medium.gif", title: "Mechanic" },
       { src: "gifs/nurse_idle_walk_medium.gif", title: "Nurse" },
       { src: "gifs/security_idle_walk_medium.gif", title: "Security" },
