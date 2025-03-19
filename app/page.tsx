@@ -7,52 +7,65 @@ import { motion } from "framer-motion";
 
 const gifCategories = [
   {
-    category: "Base Humans",
+    category: "Human (Small)",
+    gifs: [{ src: "gifs/human_s_base_idle_walk.gif", title: "Base Idle" }],
+  },
+  {
+    category: "Human (Medium)",
     gifs: [
-      { src: "gifs/base_idle_walk_small.gif", title: "Small" },
-      { src: "gifs/base_idle_walk_medium.gif", title: "Medium" },
-      { src: "gifs/base_idle_walk_mediumfit.gif", title: "Medium Fit" },
-      { src: "gifs/base_idle_walk_large.gif", title: "Large" },
-      { src: "gifs/base_idle_walk_xlarge.gif", title: "Extra Large" },
+      { src: "gifs/human_m_base_idle_walk.gif", title: "Base Idle" },
+      { src: "gifs/human_m_admiral_idle_walk.gif", title: "Admiral Idle" },
+      {
+        src: "gifs/human_m_containment_idle_walk.gif",
+        title: "Containment Idle",
+      },
+      { src: "gifs/human_m_cryo_idle_walk.gif", title: "Cryo Idle" },
+      { src: "gifs/human_m_hoodie_idle_walk.gif", title: "Hoodie" },
+      { src: "gifs/human_m_mechanic_idle_walk.gif", title: "Mechanic" },
+      { src: "gifs/human_m_nurse_idle_walk.gif", title: "Nurse" },
+      { src: "gifs/human_m_security_idle_walk.gif", title: "Security" },
+      { src: "gifs/human_m_base_idle_walk_handgun.gif", title: "Handgun" },
+      { src: "gifs/human_m_base_idle_walk_rifle.gif", title: "Rifle" },
+      {
+        src: "gifs/human_m_base_idle_walk_rocketlauncher.gif",
+        title: "Rocket",
+      },
+      { src: "gifs/human_m_base_idle_walk_semiauto.gif", title: "Semi Auto" },
+      { src: "gifs/human_m_base_idle_walk_shotgun.gif", title: "Shotgun" },
     ],
   },
   {
-    category: "Base Humans: Guns",
-    gifs: [
-      { src: "gifs/base_idle_walk_handgun_medium.gif", title: "Handgun" },
-      { src: "gifs/base_idle_walk_rifle_medium.gif", title: "Rifle" },
-      { src: "gifs/base_idle_walk_rocketlauncher_medium.gif", title: "Rocket" },
-      { src: "gifs/base_idle_walk_semiauto_medium.gif", title: "Semi Auto" },
-      { src: "gifs/base_idle_walk_shotgun_medium.gif", title: "Shotgun" },
-    ],
+    category: "Human (Medium Fit)",
+    gifs: [{ src: "gifs/human_mf_base_idle_walk.gif", title: "Base Idle" }],
   },
   {
-    category: "Clothing Options Humans",
+    category: "Human (Large)",
+    gifs: [{ src: "gifs/human_l_base_idle_walk.gif", title: "Base Idle" }],
+  },
+  {
+    category: "Human (Extra Large)",
     gifs: [
-      { src: "gifs/admiral_idle_walk_medium.gif", title: "Admiral" },
-      { src: "gifs/hazmat_idle_walk_medium.gif", title: "Hazmat" },
-      { src: "gifs/fitness_idle_walk_medium.gif", title: "Hoodie" },
-      { src: "gifs/mechanic_idle_walk_medium.gif", title: "Mechanic" },
-      { src: "gifs/nurse_idle_walk_medium.gif", title: "Nurse" },
-      { src: "gifs/security_idle_walk_medium.gif", title: "Security" },
-      { src: "gifs/flight_suit_idle_walk_medium.gif", title: "Wet Suit" },
+      { src: "gifs/human_xl_base_idle_walk.gif", title: "Base Idle" },
+      { src: "gifs/human_xl_cryo_idle_walk.gif", title: "Cryo Idle" },
     ],
   },
   {
     category: "Furries",
-    gifs: [{ src: "gifs/furries_idle_walk.gif", title: "Furries 1" }],
+    gifs: [{ src: "gifs/furries_idle_walk.gif", title: "Idle" }],
   },
   {
     category: "Greys",
-    gifs: [{ src: "gifs/greys_idle_walk.gif", title: "Greys 1" }],
+    gifs: [{ src: "gifs/greys_idle_walk.gif", title: "Idle" }],
   },
   {
     category: "Robots",
-    gifs: [{ src: "gifs/robot_idle_walk.gif", title: "Robots 1" }],
+    gifs: [{ src: "gifs/robots_idle_walk.gif", title: "Idle" }],
   },
   {
     category: "Slimes",
-    gifs: [{ src: "gifs/slime_idle_walk_greys.gif", title: "Corrupted Greys" }],
+    gifs: [
+      { src: "gifs/slimes_idle_walk_greys.gif", title: "Corrupted Greys Idle" },
+    ],
   },
 ];
 
@@ -62,18 +75,19 @@ export default function GifShowcase() {
   );
 
   return (
-    <div className="flex flex-col items-center p-6 space-y-6">
+    <div className="flex flex-col items-center p-6">
       {/* Header */}
       <header className="w-full flex flex-col items-center p-4 text-white">
         <img src="logo.png" alt="Pocket Space Logo" className="w-32 h-32" />
       </header>
 
       <h1 className="text-3xl font-bold">POCKET SPACE: IDLE</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="flex flex-col items-center p-6 space-y-6" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 space-y-6">
         {gifCategories.map((category, index) => (
           <div key={index} className="flex flex-col items-center space-y-4">
             <h2 className="text-2xl font-semibold">{category.category}</h2>
-            <Card className="w-[500px] h-[300px] flex items-center justify-center">
+            <Card className="w-[350px] h-[300px] flex items-center justify-center">
               <CardContent className="flex items-center justify-center">
                 <motion.img
                   key={selectedGifs[index].src}
@@ -86,7 +100,7 @@ export default function GifShowcase() {
                 />
               </CardContent>
             </Card>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 overflow-auto max-w-[500px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 overflow-auto max-w-[350px]">
               {category.gifs.map((gif, gifIndex) => (
                 <Button
                   key={gifIndex}
